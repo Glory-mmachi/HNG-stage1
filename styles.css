@@ -1,0 +1,155 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background: #34495e;
+  color: white;
+  padding: 1em 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.5s;
+}
+
+header nav h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  padding: 6em 2em 2em;
+  max-width: 800px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #f1c40f;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+section {
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #ecf0f1;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .info {
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+.datetime p {
+  font-size: 1.2em;
+}
+
+.tech-goals ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.tech-goals ul li {
+  margin: 0.5em 0;
+  transition: color 0.3s;
+}
+
+.tech-goals ul li:hover {
+  color: #f1c40f;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin: 0.5em 0;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #1abc9c;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.links ul li a:hover {
+  color: #16a085;
+}
+
+footer {
+  background: #34495e;
+  color: white;
+  padding: 1em 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 1em;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

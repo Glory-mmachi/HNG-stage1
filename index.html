@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>My Tech Goals</h1>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Welcome to My Tech Journey</h2>
+        <p>
+          Follow my progress and goals in the tech field over the next 2 years.
+        </p>
+      </section>
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="profile">
+          <img
+            src="./slackProfile.jpg"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+            width="150"
+            height="150"
+          />
+          <div class="info">
+            <p data-testid="Glory Mmachi">Slack Name: Glory Mmachi</p>
+            <p data-testid="Mglory360@gmail.com">Slack Email: Mglory360@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <section class="datetime" id="datetime">
+        <h2>Time and Date</h2>
+        <p data-testid="currentTimeUTC">
+          Time (UTC): <span id="currentTime"></span>
+        </p>
+        <p data-testid="currentDay">Day: <span id="currentDay"></span></p>
+      </section>
+      <section class="tech-goals" id="tech-goals">
+        <h2>My Tech Goals for the Next 2 Years</h2>
+        <ul>
+          <li>Develop a personal portfolio website</li>
+          <li>Get a Job in tech</li>
+          <li>Contribute to open-source projects</li>
+          <li>Advance my tech skill by Learning a different indemand tech skill</li>
+          <li>Encourage others to get a tech skill</li>
+        </ul>
+      </section>
+      <section class="links" id="links">
+        <h2>Useful Links</h2>
+        <ul>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+          </li>
+          <li>
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Glory Mmachi</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
